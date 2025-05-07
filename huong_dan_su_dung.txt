@@ -1,0 +1,54 @@
+HƯỚNG DẪN SỬ DỤNG WEB BÊN VANH DEV
+
+-----------------------------
+1. THÊM / ĐỔI NHẠC
+
+- Bước 1: Mở thư mục "music/" trong dự án.
+- Bước 2: Thêm file nhạc .mp3 vào (ví dụ: newtrack.mp3).
+- Bước 3: Mở file index.html, tìm đoạn:
+
+  <select onchange="changeSong(this.value)">
+    ...
+    <option value="./music/deanhluongthien.mp3">Để Anh Lương Thiện Remix</option>
+
+- Bước 4: Thêm bài mới như sau:
+
+  <option value="./music/newtrack.mp3">Tên bài hát hiển thị</option>
+
+-----------------------------
+2. THAY LINK MẠNG XÃ HỘI / LIÊN LẠC
+
+- Mở file index.html, tìm các nút mạng xã hội:
+
+  <button class="button" onclick="location.href='https://facebook.com/...'">
+    <i class="fab fa-facebook"></i> Facebook
+  </button>
+
+- Thay link trong location.href thành link của mày.
+- Ví dụ đổi link TikTok:
+
+  <button class="button" onclick="location.href='https://tiktok.com/@ten_cua_may'">
+
+- Zalo hoặc SĐT thì xài: location.href='tel:0123456789'
+
+-----------------------------
+3. THÊM APP VÀO MỤC "CÁC ỨNG DỤNG CỦA TAO"
+
+- Bước 1: Mở thư mục "avtapp/", thêm ảnh vuông đại diện cho app (ví dụ: app3.jpg).
+- Bước 2: Mở file index.html, tìm đoạn:
+
+  <div class="app-grid">
+    <a href="https://example.com/app2" class="app-card" target="_blank">
+      <img src="./avtapp/app2.jpg" alt="App 2">
+      <span>Spectra - Music Visualizer</span>
+    </a>
+
+- Bước 3: Thêm một block mới dưới đoạn trên:
+
+    <a href="https://link-app-cua-may.com" class="app-card" target="_blank">
+      <img src="./avtapp/app3.jpg" alt="App 3">
+      <span>Tên App Mới</span>
+    </a>
+
+-----------------------------
+MỌI CHI TIẾT XIN LIÊN HỆ ZALO: 0388.838.940
